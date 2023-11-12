@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="reset.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<header>
-		<div class="header-top">
-			<h1><img src="images/logo.png" alt="logo image" width="309px" height="43px"></h1>
-			<ul class="header-link-list">
-				<li><a href="#">ホーム</a></li>
-				<li><a href="#">会社情報</a></li>
-				<li><a href="#">お問い合わせ</a></li>
-			</ul>
-		</div>
-		<div class="header-main-visual">
-			<p class="main-visual-text">安全と品質へのこだわり、<br>未来への一歩を踏み出す</p>
-		</div>
-	</header>
-	<section class="news-section">
-		<h2 class="news-head">お知らせ</h2>
-		<ul class="news-list">
-			<li><span>0000/00/00</span><span>0000年度の採用情報を公開しました</span></li>
-			<li><span>0000/00/00</span><span>株式会社XXXXXX × 株式会社〇〇〇〇　新作モノづくりに向き合う職人の情熱を届ける『〇〇〇〇』が登場
-				0000年00月00日（月）に発売</span></li>
-			<li><span>0000/00/00</span><span>0000年度の事例を更新しました</span></li>
-			<li><span>0000/00/00</span><span>0000年度の1Dayインターンを開催しました</span></li>
-		</ul>
-		<a class="news-list-link" href="#">お知らせの一覧を見る ></a>
-	</section>
-	<section class="company-info-section">
-		<h2 class="company-info-head">会社情報</h2>
-		<div class="company-info-content-wrap">
-			<img src="images/company-info.png" width="500px" height="300px" class="company-info-image">
-			<div class="company-info-content">
-				<p class="company-info-motto">創業10年を迎え更なる事業展開、<br>私たちのモットーは「安全」です。</p>
-				<p class="company-info-text">当社は創業以来、一貫して「安全」を最優先に考え、<br>お客様と社員の幸せを追求し続けております。<br>私たちの使命は、高品質で安全な製品・サービスを提供し、<br>業界のリーダーとして社会に貢献していくことです。</p>
-				<a class="company-info-link" href="#">会社情報を見る ></a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+				<h1>
+					<img src="images/logo.png" alt="logo image" width="309px" height="43px"/>
+				</h1>
+				<ul class="header-link-list">
+					<li><a href="#">ホーム</a></li>
+					<li><a href="#">会社情報</a></li>
+					<li><a href="#">お問い合わせ</a></li>
+				</ul>
+				<button class="header-menu-open-btn" id="header-menu-open-btn"></button>
+				<div class="header-menu-link-list-wrap" id="header-menu-link-list-wrap">
+					<button class="header-menu-close-btn" id="header-menu-close-btn"></button>
+					<ul class="header-menu-link-list">
+						<li><a href="#">ホーム</a></li>
+						<li><a href="#">会社情報</a></li>
+						<li><a href="#">お問い合わせ</a></li>
+						<li><a href="#">お知らせ一覧</a></li>
+					</ul>
+				</div>
+				<div class="header-menu-overlay" id="header-menu-overlay"></div>
 			</div>
-		</div>
-	</section>
-	<section class="contact-section">
-		<h2 class="contact-head">お問い合わせ</h2>
-		<a href="#" class="contact-form-link"><span class="contact-form-link-text">お問い合わせフォームはこちら</span></a>
-		<p class="note-about-contact">※3営業日以内の返信となります。ご了承ください。</p>
-	</section>
-	<footer class="footer">
-		<p>Copyright @ 株式会社XXXXXX </p>
-	</footer>
-</body>
+			<div class="header-main-visual">
+				<p class="main-visual-text">
+					安全と品質へのこだわり、<br />未来への一歩を踏み出す
+				</p>
+			</div>
+		</header>
+		<section class="news-section">
+			<h2 class="news-head">お知らせ</h2>
+			<ul class="news-list">
+				<li>
+					<span>0000/00/00</span><span>0000年度の採用情報を公開しました</span>
+				</li>
+				<li>
+					<span>0000/00/00</span><span>株式会社XXXXXX × 株式会社〇〇〇〇　新作モノづくりに向き合う職人の情熱を届け『〇〇〇〇』が登場0000年00月00日（月）に発売</span>
+				</li>
+				<li>
+					<span>0000/00/00</span><span>0000年度の事例を更新しました</span>
+				</li>
+				<li>
+					<span>0000/00/00</span><span>0000年度の1Dayインターンを開催しました</span>
+				</li>
+			</ul>
+			<a class="news-list-link" href="#">お知らせの一覧を見る ></a>
+		</section>
+		<section class="company-info-section">
+			<h2 class="company-info-head">会社情報</h2>
+			<div class="company-info-content-wrap">
+				<img src="images/company-info.png" width="500px" height="300px" class="company-info-image"/>
+				<div class="company-info-content">
+					<p class="company-info-motto">創業10年を迎え更なる事業展開、<br />私たちのモットーは「安全」です。</p>
+					<p class="company-info-text" id="company-info-text">当社は創業以来、一貫して「安全」を最優先に考え、<br />お客様と社員の幸せを追求し続けております。<br />私たちの使命は、高品質で安全な製品・サービスを提供し、<br />業界のリーダーとして社会に貢献していくことです。</p>
+					<a class="company-info-link" href="#">会社情報を見る ></a>
+				</div>
+			</div>
+		</section>
+		<section class="contact-section">
+			<h2 class="contact-head">お問い合わせ</h2>
+			<a href="#" class="contact-form-link"><span class="contact-form-link-text">お問い合わせフォームはこちら</span></a>
+			<p class="note-about-contact">※3営業日以内の返信となります。ご了承ください。</p>
+		</section>
+		<footer class="footer">
+			<p>Copyright @ 株式会社XXXXXX</p>
+		</footer>
+		<button class="page-top-btn" id="page-top-btn"></button>
+	<script src="script.js"></script>
+	</body>
 </html>
